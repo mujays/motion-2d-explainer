@@ -1,0 +1,908 @@
+{
+ "lang": "id",
+ "background": "day",
+ "design_aspect": "9:16",
+ "format": {
+  "aspect": "9:16",
+  "quality": 720,
+  "fps": 30
+ },
+ "meta": {
+  "title": [
+   "Tumbuhan kok",
+   "bisa masak?"
+  ],
+  "outro": [
+   "Tumbuhan masak",
+   "dari cahaya matahari"
+  ],
+  "cta": "FOLLOW UNTUK LAINNYA"
+ },
+ "script": "Kenapa tumbuhan tidak perlu makan, tapi tetap bisa tumbuh? Jawabannya, mereka masak makanan sendiri, lewat fotosintesis. Akar menyerap air dari tanah. Daun menghirup karbon dioksida dari udara lewat lubang kecil bernama stomata. Lalu klorofil, zat hijau di daun, menangkap cahaya matahari sebagai energi. Energi itu dipakai untuk mengubah air dan karbon dioksida menjadi glukosa, yaitu makanan tumbuhan, plus oksigen yang dilepaskan ke udara. Jadi setiap napas yang kamu hirup, ada jasa daun di dalamnya.",
+ "highlight": [
+  "tumbuhan",
+  "makan",
+  "tumbuh",
+  "makanan",
+  "fotosintesis",
+  "akar",
+  "tanah",
+  "daun",
+  "karbon",
+  "dioksida",
+  "stomata",
+  "klorofil",
+  "hijau",
+  "cahaya",
+  "matahari",
+  "energi",
+  "air",
+  "glukosa",
+  "oksigen",
+  "udara",
+  "napas",
+  "hirup",
+  "daun"
+ ],
+ "ambience": [
+  {
+   "name": "wind",
+   "gain": -32
+  }
+ ],
+ "camera": {
+  "x": 360,
+  "y": 600,
+  "zoom": 1.0
+ },
+ "world": [
+  {
+   "id": "sun",
+   "type": "sun",
+   "x": 585,
+   "y": 170,
+   "r": 56
+  },
+  {
+   "id": "cloud",
+   "type": "cloud",
+   "x": 140,
+   "y": 190,
+   "s": 0.9
+  },
+  {
+   "id": "cloud2",
+   "type": "cloud",
+   "x": 420,
+   "y": 120,
+   "s": 0.6
+  },
+  {
+   "id": "soil",
+   "type": "ground",
+   "y": 860,
+   "color": "#6b4a32"
+  },
+  {
+   "id": "grass",
+   "type": "rect",
+   "x": 360,
+   "y": 866,
+   "w": 3000,
+   "h": 16,
+   "fill": "#5cc27a"
+  },
+  {
+   "id": "pebbles",
+   "type": "particles",
+   "area": [
+    0,
+    900,
+    720,
+    1300
+   ],
+   "groups": [
+    {
+     "shape": "dot",
+     "color": "#7d5a40",
+     "n": 40,
+     "r": 6,
+     "motion": "none"
+    }
+   ]
+  },
+  {
+   "id": "roots",
+   "type": "svg",
+   "x": 360,
+   "y": 935,
+   "w": 300,
+   "svg": "<svg viewBox='0 0 100 60'><g fill='none' stroke='#e8d3a8' stroke-width='3.2' stroke-linecap='round'>\n<path d='M50 0 C50 14 46 22 36 32 C30 38 24 44 14 50'/><path d='M50 0 C51 16 56 24 66 32 C72 38 80 44 90 48'/>\n<path d='M50 4 C50 22 50 36 49 56'/><path d='M38 30 C34 36 34 44 30 52'/><path d='M64 30 C68 38 70 44 74 54'/></g></svg>",
+   "hidden": true,
+   "idle": "none"
+  },
+  {
+   "id": "plant",
+   "type": "svg",
+   "x": 360,
+   "y": 650,
+   "w": 420,
+   "svg": "<svg viewBox='0 0 100 100'>\n<path d='M50 100 C50 80 49 58 50 30' stroke='outline' stroke-width='8' fill='none' stroke-linecap='round'/>\n<path d='M50 100 C50 80 49 58 50 30' stroke='#3f9a5c' stroke-width='5' fill='none' stroke-linecap='round'/>\n<path d='M49 64 C38 50 20 50 6 58 C20 72 38 74 49 64 Z' fill='#5cc27a' stroke='outline' stroke-width='2.5' stroke-linejoin='round'/>\n<path d='M47 63 C36 60 22 59 12 59' stroke='#3f9a5c' stroke-width='1.6' fill='none' stroke-linecap='round'/>\n<path d='M51 46 C62 32 80 30 95 37 C82 52 64 55 51 46 Z' fill='#5cc27a' stroke='outline' stroke-width='2.5' stroke-linejoin='round'/>\n<path d='M53 45 C64 42 78 39 89 38' stroke='#3f9a5c' stroke-width='1.6' fill='none' stroke-linecap='round'/>\n<path d='M58 40 C64 36 70 35 76 35' stroke='#a8ecb9' stroke-width='2.4' fill='none' stroke-linecap='round'/>\n<path d='M50 32 C41 22 44 9 50 3 C56 9 59 22 50 32 Z' fill='#7fd396' stroke='outline' stroke-width='2.5' stroke-linejoin='round'/>\n</svg>",
+   "hidden": true,
+   "idle": "sway"
+  },
+  {
+   "id": "stomata",
+   "type": "svg",
+   "x": 470,
+   "y": 611,
+   "w": 20,
+   "svg": "<svg viewBox='0 0 100 60'><ellipse cx='36' cy='30' rx='22' ry='27' fill='#4caf6a' stroke='outline' stroke-width='2.5' stroke-linejoin='round'/><ellipse cx='64' cy='30' rx='22' ry='27' fill='#4caf6a' stroke='outline' stroke-width='2.5' stroke-linejoin='round'/>\n<ellipse cx='50' cy='30' rx='7' ry='20' fill='#2c3350'/><circle cx='30' cy='22' r='4' fill='#a8ecb9'/><circle cx='70' cy='22' r='4' fill='#a8ecb9'/></svg>",
+   "hidden": true,
+   "min_zoom": 3,
+   "idle": "none"
+  },
+  {
+   "id": "chloro",
+   "type": "svg",
+   "x": 438,
+   "y": 628,
+   "w": 22,
+   "svg": "<svg viewBox='0 0 100 100'><g>\n<ellipse cx='30' cy='35' rx='22' ry='13' fill='#3f9a5c' stroke='outline' stroke-width='2.5' stroke-linejoin='round' transform='rotate(-20 30 35)'/>\n<ellipse cx='68' cy='30' rx='20' ry='12' fill='#3f9a5c' stroke='outline' stroke-width='2.5' stroke-linejoin='round' transform='rotate(15 68 30)'/>\n<ellipse cx='48' cy='68' rx='24' ry='13' fill='#3f9a5c' stroke='outline' stroke-width='2.5' stroke-linejoin='round' transform='rotate(-8 48 68)'/>\n<path d='M16 35 L44 35 M56 30 L80 30 M30 68 L66 68' stroke='#8fe0a6' stroke-width='3' stroke-linecap='round'/></g></svg>",
+   "hidden": true,
+   "min_zoom": 3,
+   "idle": "breathe"
+  },
+  {
+   "id": "food",
+   "type": "prop",
+   "prop": "food",
+   "x": 575,
+   "y": 430,
+   "w": 130,
+   "hidden": true
+  },
+  {
+   "id": "nofood",
+   "type": "svg",
+   "x": 575,
+   "y": 430,
+   "w": 120,
+   "svg": "<svg viewBox='0 0 100 100'><path d='M18 18 L82 82 M82 18 L18 82' stroke='#ef5a6f' stroke-width='12' stroke-linecap='round'/></svg>",
+   "hidden": true,
+   "idle": "none"
+  },
+  {
+   "id": "drop",
+   "type": "prop",
+   "prop": "drop",
+   "x": 385,
+   "y": 525,
+   "w": 46,
+   "hidden": true
+  },
+  {
+   "id": "co2",
+   "type": "svg",
+   "x": 515,
+   "y": 525,
+   "w": 62,
+   "svg": "<svg viewBox='0 0 120 60'><circle cx='30' cy='30' r='17' fill='#9aa3c2' stroke='outline' stroke-width='2.5' stroke-linejoin='round'/><circle cx='60' cy='30' r='22' fill='#2c3350' stroke='outline' stroke-width='2.5' stroke-linejoin='round'/><circle cx='90' cy='30' r='17' fill='#9aa3c2' stroke='outline' stroke-width='2.5' stroke-linejoin='round'/></svg>",
+   "hidden": true
+  },
+  {
+   "id": "glu",
+   "type": "svg",
+   "x": 448,
+   "y": 612,
+   "w": 44,
+   "svg": "<svg viewBox='0 0 100 100'><path d='M50 6 L88 28 L88 72 L50 94 L12 72 L12 28 Z' fill='#ffb02e' stroke='outline' stroke-width='2.5' stroke-linejoin='round'/><path d='M50 22 L74 36 L74 64 L50 78 L26 64 L26 36 Z' fill='#ffd25a'/></svg>",
+   "hidden": true,
+   "idle": "breathe"
+  },
+  {
+   "id": "person",
+   "type": "prop",
+   "prop": "person2",
+   "x": 615,
+   "y": 800,
+   "w": 120,
+   "hidden": true
+  }
+ ],
+ "beats": [
+  {
+   "at": "Kenapa",
+   "do": [
+    {
+     "type": "show",
+     "id": "roots",
+     "anim": "wipe",
+     "dur": 0.8
+    },
+    {
+     "type": "show",
+     "id": "plant",
+     "anim": "grow",
+     "dur": 1.1,
+     "delay": 0.3
+    }
+   ]
+  },
+  {
+   "at": "tidak perlu makan",
+   "do": [
+    {
+     "type": "show",
+     "id": "food",
+     "anim": "drop"
+    },
+    {
+     "type": "show",
+     "id": "nofood",
+     "anim": "pop",
+     "delay": 0.5
+    }
+   ]
+  },
+  {
+   "at": "tetap bisa tumbuh",
+   "do": [
+    {
+     "type": "wiggle",
+     "id": [
+      "food",
+      "nofood"
+     ]
+    },
+    {
+     "type": "set",
+     "id": "plant",
+     "props": {
+      "scale": 1.12
+     },
+     "dur": 1.0,
+     "sfx": "rise"
+    }
+   ]
+  },
+  {
+   "at": "Jawabannya",
+   "do": [
+    {
+     "type": "hide",
+     "hide": [
+      "food",
+      "nofood"
+     ]
+    },
+    {
+     "type": "emphasize",
+     "id": "plant"
+    },
+    {
+     "type": "glow",
+     "target": "plant",
+     "r": 200,
+     "color": "yellow",
+     "dur": 2.6
+    }
+   ]
+  },
+  {
+   "at": "masak makanan sendiri",
+   "do": {
+    "type": "camera",
+    "focus": [
+     380,
+     560
+    ],
+    "zoom": 1.15,
+    "dur": 1.2
+   }
+  },
+  {
+   "at": "lewat fotosintesis",
+   "do": [
+    {
+     "type": "bigtext",
+     "bigtext": "FOTOSINTESIS",
+     "y": 0.24,
+     "size": 62,
+     "hold": 1.6
+    },
+    {
+     "type": "set",
+     "id": "plant",
+     "props": {
+      "scale": 1.0
+     },
+     "dur": 0.8
+    }
+   ]
+  },
+  {
+   "at": "Akar menyerap",
+   "do": [
+    {
+     "type": "camera",
+     "focus": [
+      360,
+      905
+     ],
+     "zoom": 1.7,
+     "dur": 1.2
+    },
+    {
+     "type": "emphasize",
+     "id": "roots",
+     "scale": 1.12
+    },
+    {
+     "type": "label",
+     "label": "Akar",
+     "target": [
+      300,
+      990
+     ],
+     "offset": [
+      -50,
+      -70
+     ],
+     "hold": 2.2
+    }
+   ]
+  },
+  {
+   "at": "air dari tanah",
+   "do": {
+    "type": "stream",
+    "path": [
+     [
+      262,
+      985
+     ],
+     [
+      300,
+      960
+     ],
+     [
+      345,
+      935
+     ],
+     [
+      360,
+      900
+     ],
+     [
+      361,
+      840
+     ],
+     [
+      362,
+      770
+     ]
+    ],
+    "shape": "drop",
+    "color": "#4fa8f0",
+    "n": 7,
+    "speed": 120,
+    "size": 6,
+    "dur": 4.2
+   }
+  },
+  {
+   "at": "Daun menghirup",
+   "do": [
+    {
+     "type": "camera",
+     "focus": [
+      470,
+      600
+     ],
+     "zoom": 2.0,
+     "dur": 1.3
+    },
+    {
+     "type": "stream",
+     "path": [
+      [
+       700,
+       470
+      ],
+      [
+       620,
+       520
+      ],
+      [
+       540,
+       580
+      ],
+      [
+       472,
+       612
+      ]
+     ],
+     "shape": "text",
+     "text": "CO2",
+     "color": "#5b6280",
+     "n": 4,
+     "speed": 70,
+     "size": 6,
+     "dur": 5.0,
+     "delay": 0.4
+    }
+   ]
+  },
+  {
+   "at": "lubang kecil",
+   "do": {
+    "type": "pulse",
+    "target": [
+     470,
+     611
+    ],
+    "r": 26
+   }
+  },
+  {
+   "at": "bernama stomata",
+   "do": [
+    {
+     "type": "camera",
+     "focus": [
+      468,
+      614
+     ],
+     "zoom": 6.0,
+     "dur": 1.2
+    },
+    {
+     "type": "show",
+     "id": "stomata",
+     "anim": "pop",
+     "delay": 0.4
+    },
+    {
+     "type": "label",
+     "label": "Stomata",
+     "target": [
+      470,
+      602
+     ],
+     "offset": [
+      40,
+      -70
+     ],
+     "hold": 2.0,
+     "delay": 0.6
+    }
+   ]
+  },
+  {
+   "at": "Lalu klorofil",
+   "do": [
+    {
+     "type": "show",
+     "id": "chloro",
+     "anim": "grow"
+    },
+    {
+     "type": "wiggle",
+     "id": "stomata"
+    },
+    {
+     "type": "label",
+     "label": "Klorofil",
+     "target": [
+      438,
+      628
+     ],
+     "offset": [
+      -60,
+      70
+     ],
+     "hold": 2.6,
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "at": "zat hijau",
+   "do": [
+    {
+     "type": "emphasize",
+     "id": "chloro",
+     "scale": 1.3
+    },
+    {
+     "type": "glow",
+     "target": [
+      438,
+      628
+     ],
+     "r": 30,
+     "color": "green",
+     "dur": 1.8
+    }
+   ]
+  },
+  {
+   "at": "menangkap cahaya",
+   "do": [
+    {
+     "type": "camera",
+     "focus": [
+      480,
+      420
+     ],
+     "zoom": 1.0,
+     "dur": 1.3
+    },
+    {
+     "type": "stream",
+     "path": [
+      [
+       575,
+       200
+      ],
+      [
+       530,
+       400
+      ],
+      [
+       452,
+       610
+      ]
+     ],
+     "shape": "ray",
+     "color": "yellow",
+     "n": 9,
+     "speed": 300,
+     "size": 8,
+     "dur": 3.6,
+     "delay": 0.5
+    },
+    {
+     "type": "emphasize",
+     "id": "sun",
+     "delay": 0.3
+    }
+   ]
+  },
+  {
+   "at": "sebagai energi",
+   "do": [
+    {
+     "type": "glow",
+     "target": [
+      452,
+      616
+     ],
+     "r": 120,
+     "color": "yellow",
+     "dur": 2.0
+    },
+    {
+     "type": "label",
+     "label": "Energi",
+     "target": [
+      452,
+      600
+     ],
+     "offset": [
+      50,
+      -60
+     ],
+     "hold": 1.8
+    }
+   ]
+  },
+  {
+   "at": "Energi itu dipakai",
+   "do": [
+    {
+     "type": "camera",
+     "focus": [
+      450,
+      585
+     ],
+     "zoom": 2.1,
+     "dur": 1.2
+    },
+    {
+     "type": "show",
+     "id": "drop",
+     "anim": "slide-right",
+     "delay": 0.3
+    },
+    {
+     "type": "show",
+     "id": "co2",
+     "anim": "slide-left",
+     "delay": 0.5
+    }
+   ]
+  },
+  {
+   "at": "mengubah air",
+   "do": [
+    {
+     "type": "emphasize",
+     "id": "drop"
+    },
+    {
+     "type": "emphasize",
+     "id": "co2",
+     "delay": 0.6
+    }
+   ]
+  },
+  {
+   "at": "menjadi glukosa",
+   "do": [
+    {
+     "type": "move",
+     "id": "drop",
+     "to": [
+      448,
+      612
+     ],
+     "dur": 0.6,
+     "ease": "io"
+    },
+    {
+     "type": "move",
+     "id": "co2",
+     "to": [
+      448,
+      612
+     ],
+     "dur": 0.6,
+     "ease": "io"
+    },
+    {
+     "type": "hide",
+     "hide": [
+      "drop",
+      "co2"
+     ],
+     "delay": 0.55,
+     "dur": 0.2
+    },
+    {
+     "type": "show",
+     "id": "glu",
+     "anim": "pop",
+     "delay": 0.6
+    },
+    {
+     "type": "flash",
+     "strength": 0.25,
+     "delay": 0.6
+    },
+    {
+     "type": "label",
+     "label": "Glukosa",
+     "target": [
+      448,
+      600
+     ],
+     "offset": [
+      50,
+      -60
+     ],
+     "hold": 2.0,
+     "delay": 0.8
+    }
+   ]
+  },
+  {
+   "at": "makanan tumbuhan",
+   "do": [
+    {
+     "type": "camera",
+     "focus": [
+      400,
+      760
+     ],
+     "zoom": 1.35,
+     "dur": 1.4
+    },
+    {
+     "type": "move",
+     "id": "glu",
+     "path": [
+      [
+       448,
+       612
+      ],
+      [
+       405,
+       640
+      ],
+      [
+       364,
+       700
+      ],
+      [
+       360,
+       790
+      ],
+      [
+       360,
+       880
+      ]
+     ],
+     "dur": 1.8,
+     "ease": "io",
+     "delay": 0.2
+    },
+    {
+     "type": "set",
+     "id": "glu",
+     "props": {
+      "w": 30
+     },
+     "dur": 1.8,
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "at": "plus oksigen",
+   "do": [
+    {
+     "type": "camera",
+     "focus": [
+      470,
+      520
+     ],
+     "zoom": 1.2,
+     "dur": 1.2
+    },
+    {
+     "type": "hide",
+     "id": "glu"
+    },
+    {
+     "type": "stream",
+     "path": [
+      [
+       452,
+       606
+      ],
+      [
+       520,
+       470
+      ],
+      [
+       600,
+       330
+      ],
+      [
+       640,
+       240
+      ]
+     ],
+     "shape": "text",
+     "text": "O2",
+     "color": "#4fa8f0",
+     "n": 5,
+     "speed": 110,
+     "size": 7,
+     "dur": 3.0
+    },
+    {
+     "type": "label",
+     "label": "Oksigen",
+     "target": [
+      540,
+      420
+     ],
+     "offset": [
+      -50,
+      -60
+     ],
+     "hold": 2.2,
+     "delay": 0.4
+    }
+   ]
+  },
+  {
+   "at": "Jadi setiap napas",
+   "do": [
+    {
+     "type": "camera",
+     "focus": [
+      470,
+      640
+     ],
+     "zoom": 1.05,
+     "dur": 1.2
+    },
+    {
+     "type": "show",
+     "id": "person",
+     "anim": "slide-left",
+     "distance": 300
+    }
+   ]
+  },
+  {
+   "at": "yang kamu hirup",
+   "do": [
+    {
+     "type": "stream",
+     "path": [
+      [
+       460,
+       610
+      ],
+      [
+       530,
+       640
+      ],
+      [
+       600,
+       730
+      ]
+     ],
+     "shape": "text",
+     "text": "O2",
+     "color": "#4fa8f0",
+     "n": 4,
+     "speed": 90,
+     "size": 6,
+     "dur": 3.4
+    },
+    {
+     "type": "emphasize",
+     "id": "person",
+     "delay": 0.6
+    }
+   ]
+  },
+  {
+   "at": "ada jasa daun",
+   "do": [
+    {
+     "type": "glow",
+     "target": [
+      452,
+      616
+     ],
+     "r": 120,
+     "color": "green",
+     "dur": 2.4
+    },
+    {
+     "type": "emphasize",
+     "id": "plant",
+     "scale": 1.08
+    },
+    {
+     "type": "pulse",
+     "target": [
+      452,
+      616
+     ],
+     "r": 90
+    }
+   ]
+  },
+  {
+   "at": "di dalamnya",
+   "do": {
+    "type": "camera",
+    "focus": [
+     380,
+     600
+    ],
+    "zoom": 1.0,
+    "dur": 1.6
+   }
+  }
+ ],
+ "_note": "Contoh kaya animasi. Tambahkan \"audio\": \"voice.mp3\" untuk mode VO."
+}

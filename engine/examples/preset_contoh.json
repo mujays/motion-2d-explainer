@@ -1,0 +1,16 @@
+{
+  "format": {
+    "aspect": "9:16",
+    "quality": 1080,
+    "fps": 30,
+    "captions": {"show": true, "position": "bottom", "words": 3, "highlight": true, "size": "sedang", "uppercase": false},
+    "title": true,
+    "outro": true,
+    "cta": "FOLLOW UNTUK LAINNYA",
+    "sfx": true,
+    "sfx_volume_db": 0,
+    "ambience": true,
+    "watermark": "@akunmu",
+    "watermark_pos": "top-right"
+  }
+}
